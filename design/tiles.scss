@@ -1,0 +1,71 @@
+.tiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 10%;
+
+    .top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+        margin-bottom: 1em;
+
+        div {
+            position: relative;
+            overflow: hidden;
+
+            span {
+                position: absolute;
+                bottom: 5%;
+                left: 45%;
+                color: white;
+                font-size: 24px;
+                letter-spacing: 0.2em;
+            }
+
+            img {
+                transition: transform 200ms linear;
+                min-width: 100%;
+                min-height: 100%;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        margin-top: 1em;
+
+        div {
+            position: relative;
+            overflow: hidden;
+
+            span {
+                position: absolute;
+                bottom: 5%;
+                left: 45%;
+                color: white;
+                font-size: 24px;
+                letter-spacing: 0.2em;
+            }
+
+            img {
+                transition: transform 200ms linear;
+                min-width: 100%;
+                min-height: 100%;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

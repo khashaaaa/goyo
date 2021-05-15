@@ -1,0 +1,109 @@
+.header {
+
+    @media (max-width: 1024px) {
+        font-size: 70%;
+    }
+
+    .info {
+        background-color: #151515;
+        text-align: center;
+
+        p {
+            color: white;
+            padding: 5px 0;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+    }
+
+    .nav {
+
+        .settings {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1em 2em;
+
+            .left {
+                display: flex;
+
+                select {
+                    cursor: pointer;
+                    width: 90px;
+                    border: 0;
+                    outline: 0;
+                    background-color: white;
+
+                    option {
+                        cursor: pointer;
+                    }
+                }
+
+                .search {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 3em;
+                    color: #7A7A7A;
+
+                    input {
+                        border: 0;
+                        outline: 0;
+                        margin-left: 1em;
+                    }
+                }
+            }
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .right {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .heart {
+                    cursor: pointer;
+                    margin-right: 2em;
+                }
+
+                .bag {
+                    cursor: pointer;
+                    position: relative;
+
+                    .badge {
+                        position: absolute;
+                        bottom: 0;
+                        left: 8px;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            padding-top: 1em;
+            justify-content: center;
+
+            .inner {
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+
+                a {
+                    line-height: 1.8;
+                    letter-spacing: 2px;
+                    transition: 50ms linear;
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 1px solid transparent;
+
+                    &:hover {
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
